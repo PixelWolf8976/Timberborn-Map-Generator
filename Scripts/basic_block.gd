@@ -10,6 +10,6 @@ const WATER = preload("res://Assets/water.tres")
 
 func set_material(type: String):
 	if type == "Dirt":
-		mesh3d.mesh.material = DIRT
+		mesh3d.material_override = DIRT
 	elif type == "Water":
-		mesh3d.mesh.material = WATER
+		mesh3d.material_override = WATER

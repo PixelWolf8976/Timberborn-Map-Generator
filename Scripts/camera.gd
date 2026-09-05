@@ -18,9 +18,10 @@ func _process(delta: float) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		var mouse_movement = event.relative
-		
-		rotate_y(-mouse_movement.x * sensitivity)
-		camera.rotate_x(-mouse_movement.y * sensitivity)
-		camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, -90, 90)
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		if event is InputEventMouseMotion:
+			var mouse_movement = event.relative
+			
+			rotate_y(-mouse_movement.x * sensitivity)
+			camera.rotate_x(-mouse_movement.y * sensitivity)
+			camera.rotation_degrees.x = clamp(camera.rotation_degrees.x, -90, 90)

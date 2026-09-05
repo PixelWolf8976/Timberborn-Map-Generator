@@ -4,3 +4,7 @@
 
 [node name="Voxel Map" type="Node3D" unique_id=538470089]
 script = ExtResource("1_jxit5")
+
+[node name="Dirt" type="Node3D" parent="." unique_id=2135583406]
+
+[node name="Water" type="Node3D" parent="." unique_id=1762902741]
