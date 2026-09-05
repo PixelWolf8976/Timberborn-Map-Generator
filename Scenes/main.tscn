@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b461ws7v7n4a"]
+
+[ext_resource type="Script" uid="uid://cm5gxkx14po7x" path="res://Scripts/main.gd" id="1_8gbba"]
+[ext_resource type="PackedScene" uid="uid://dtpermggc3o6h" path="res://Scenes/voxel_map.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://cuvomkpoqaik5" path="res://Scenes/camera.tscn" id="2_bo1nx"]
+
+[sub_resource type="Environment" id="Environment_0cd6b"]
+
+[node name="Main" type="Node3D" unique_id=1560400784]
+script = ExtResource("1_8gbba")
+
+[node name="Voxel Map" parent="." unique_id=538470089 instance=ExtResource("1_jjgbg")]
+
+[node name="Camera" parent="." unique_id=537411767 instance=ExtResource("2_bo1nx")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=117018881]
+transform = Transform3D(0.932049, -0.23967531, 0.27173597, 0, 0.74996334, 0.6614794, -0.36233228, -0.61653113, 0.6990026, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1965179575]
+environment = SubResource("Environment_0cd6b")

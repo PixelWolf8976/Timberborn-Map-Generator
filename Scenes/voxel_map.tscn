@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dtpermggc3o6h"]
+
+[ext_resource type="Script" uid="uid://bppgq8xlhl3yh" path="res://Scripts/voxel_map.gd" id="1_jxit5"]
+
+[node name="Voxel Map" type="Node3D" unique_id=538470089]
+script = ExtResource("1_jxit5")
