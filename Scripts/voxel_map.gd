@@ -5,7 +5,7 @@ const BASIC_BLOCK: PackedScene = preload("res://Scenes/basic_block.tscn")
 
 
 func _ready() -> void:
-	var data: Dictionary = load_json("res://Worlds/world.json")
+	var data: Dictionary = load_json("res://Worlds/15x15_world.json")
 	print(data)
 	make_map(data)
 
